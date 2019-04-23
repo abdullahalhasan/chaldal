@@ -45,48 +45,65 @@ session_start();
 
     <form action="q29.php" method="post">
 
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-12">
-                    <label for="gender" class="col-md-4 col-form-label">27.  নিচের কোনটি আপনার আছে?  </label>
-                    <div class="col-md-8">
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q27" id="maleRadio" value="1">
-                            <label class="form-check-label" for="inlineRadio1">ব্যাংক অ্যাকাউন্ট</label>
-                        </div>
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q27" id="femaleRadio" value="2">
-                            <label class="form-check-label" for="inlineRadio2">MFS অ্যাকাউন্ট</label>
-                        </div>
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q27" id="femaleRadio" value="3">
-                            <label class="form-check-label" for="inlineRadio2">কো-অপারেটিভ সোসাইটি সেভিংস</label>
-                        </div>
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q27" id="femaleRadio" value="4">
-                            <label class="form-check-label" for="inlineRadio2">কোনটিই নেই</label>
-                        </div>
+        <div class="form-group row">
+            <label for="gender" class="col-md-4 col-form-label">27. আপনার ব্যবসার পুঁজি কোথা থেকে যোগাড় করেন? </label>
+            <div class="col-md-8">
+
+                <div class="row">
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">নিজের পুঁজি -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27a" placeholder="%">
+
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">পরিবারের সদস্যদের থেকে লোন নিয়ে -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27b" placeholder="%">
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">মহাজন/ টাকা ধার দেয় এমন কারো কাছ থেকে লোন
+                            নিয়ে -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27c" placeholder="%">
+
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">কো-অপারেটিভ সোসাইটি থেকে লোন নিয়ে -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27d" placeholder="%">
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">ব্যাংক/ লিজিং কম্পানী থেকে লোন নিয়ে -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27e" placeholder="%">
+
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                        <label class="form-check-label" for="inlineRadio2">পাইকার এর কাছ থেকে বাকি নিয়ে -</label>
+                        <input class="form-check-input" type="number" max="100" name="q27f" placeholder="%">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-12">
-                    <label for="gender" class="col-md-4 col-form-label">28.  আপনি কি সেভিংস করতে পারেন?  </label>
-                    <div class="col-md-8">
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q28" id="maleRadio" value="1">
-                            <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
-                        </div>
-                        <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q28" id="femaleRadio" value="2">
-                            <label class="form-check-label" for="inlineRadio2">না</label>
-                        </div>
+        <div class="form-group row">
+            <label for="gender" class="col-md-4 col-form-label">28. আপনি আপনার পাইকার/ সাপ্লাইয়ার কে টাকা পরিশোধ করেন
+                কিভাবে? </label>
+            <div class="col-md-4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q28" id="maleRadio" value="1">
+                    <label class="form-check-label" for="inlineRadio1">নগদ টাকা (ক্যাশ)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q28" id="femaleRadio" value="2">
+                    <label class="form-check-label" for="inlineRadio2">মোবাইলে (বিকাশ, রকেট, ইত্যাদি)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q28" id="femaleRadio" value="3">
+                    <label class="form-check-label" for="inlineRadio2">ব্যাংকের মাধ্যমে</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio2">অন্য কিছু- </label>
+                    <input class="form-check-input" type="text" name="q28" id="femaleRadio">
                 </div>
             </div>
         </div>
+
         <!-- next button-->
         <div>
             <button type="submit" class="btn btn-success" name="next_btn">Next</button>

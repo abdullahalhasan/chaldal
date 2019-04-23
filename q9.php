@@ -54,11 +54,12 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-md-12">
-                    <label for="gender" class="col-md-4 col-form-label">9. মাসে কতদিন ব্যবসায় বসেন?  </label>
+                    <label for="gender" class="col-md-4 col-form-label">9. মাসে কত দিন আপনি আপনার সবজীর দোকান
+                        খোলেন? </label>
                     <div class="col-md-8">
 
                         <div class=" form-check">
-                            <input class="form-check-input" type="radio" name="q9" id="maleRadio" value="1">
+                            <input class="form-check-input" type="radio" name="q9" id="maleRadio" value="1" required>
                             <label class="form-check-label" for="inlineRadio1">২০ দিনের বেশি</label>
                         </div>
                         <div class="form-check">

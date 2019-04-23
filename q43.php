@@ -43,51 +43,16 @@ session_start();
 <!--Heading-->
 <div class="container">
 
-    <form action="q25.php" method="post">
+    <form action="q44.php" method="post">
         <div class="form-group row">
-
-            <label for="center" class="col-md-4 col-form-label">19. সপ্তাহে কত টাকার সবজি দোকানে তোলেন?</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" name="q19" >
-            </div>
-        </div>
-        <div class="form-group row">
-
-            <label for="center" class="col-md-4 col-form-label">20. সপ্তাহে কত লাভ করেন?</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" name="q20" >
-            </div>
-        </div>
-        <div class="form-group row">
-
-            <label for="center" class="col-md-4 col-form-label">21. মাসিক দোকান ভাড়া কত?</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" name="q21" >
-            </div>
-        </div>
-        <div class="form-group row">
-
-            <label for="center" class="col-md-4 col-form-label">22. মাসিক ট্রান্সপোর্ট ও ক্যারিং খরচ কত?</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" name="q22" >
-            </div>
-        </div>
-        <div class="form-group row">
-
-            <label for="center" class="col-md-4 col-form-label">23. সপ্তাহে কত টাকার সবজি নষ্ট হয়?</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" name="q23" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="gender" class="col-md-4 col-form-label">24. আপনার হোলসেলার / সাপ্লায়ার কি বাকিতে সবজি দেয়?  </label>
+            <label for="gender" class="col-md-4 col-form-label">43. আপনার কি এখন কোন লোনের প্রয়োজন আছে? </label>
             <div class="col-sm-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q24" id="maleRadio" value="1">
+                    <input class="form-check-input" type="radio" name="q43" id="maleRadio" value="1" required>
                     <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q24" id="femaleRadio" value="2">
+                    <input class="form-check-input" type="radio" name="q43" id="femaleRadio" value="2">
                     <label class="form-check-label" for="inlineRadio2">না</label>
                 </div>
             </div>

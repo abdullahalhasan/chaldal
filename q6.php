@@ -45,11 +45,12 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-md-12">
-                    <label for="gender" class="col-md-6 col-form-label">6. বয়সের সীমা ?    </label>
+                    <label for="gender" class="col-md-6 col-form-label">6.আপনার বয়স এর সীমা সিলেক্ট করুন [SHOW THE
+                        CARD]</label>
                     <div class="col-md-6">
 
                         <div class=" form-check">
-                            <input class="form-check-input" type="radio" name="q6" id="maleRadio" value="1">
+                            <input class="form-check-input" type="radio" name="q6" id="maleRadio" value="1" required>
                             <label class="form-check-label" for="inlineRadio1">১৫ বছরের নিচে</label>
                         </div>
                         <div class="form-check">

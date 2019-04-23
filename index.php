@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Incepta Events</title>
+    <title>Survey</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,9 +39,12 @@
     <!--Heading-->
     <div class="container">
         <div class="jumbotron">
-            <h2 style="text-align: center">Good morning/afternoon/evening Sir, My name is ____________ from Mindscape Limited, a market research company. We would like to know about your vegetable business.<br><br>
-                I will take only 10-15 minutes. There are questions related to your business and your opinion on how to make your life easier. We are giving away 20 taka mobile recharge for participating in to our survey.<br><br>
-                All your provided information will remain confidential and will only be used for research purpose. We will never disclose your contact details with any one.<br>
+            <h2 style="text-align: center">শুভ সকাল/ বিকাল/ সন্ধ্যা। আমার নাম "নাম বলুন", আমি মাইন্ডস্কেপ লিমিটেড নামক
+                একটি মার্কেট রিসার্চ কম্পানী থেকে এসেছি। আমরা আপনার এই সবজী ব্যবসায়ের ব্যাপারে একটু কথা বলবো।
+                এই সার্ভেটি করতে আমাদের ২০-৩০ মিনিট সময় লাগতে পারে। এই সময়ের মধ্যে আমরা আপনার ব্যবসা নিয়ে কিছু আলোচনা
+                করবো। এই সার্ভেটি তে অংশগ্রহণের জন্য আমরা আপনার মোবাইলে ২০ টাকা রিচার্জ প্রদান করবো।
+                আপনার তথ্য সম্পুর্ণ গোপন রাখা হবে এবং শুধুমাত্র গবেষণার কাজে ব্যবহার করা হবে।
+
             </h2>
         </div>
         <div>

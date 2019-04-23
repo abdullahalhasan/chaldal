@@ -43,36 +43,36 @@ session_start();
 <!--Heading-->
 <div class="container">
 
-    <form action="q19.php" method="post">
+    <form action="q33.php" method="post">
 
-        <div class="form-group row">
-            <label for="gender" class="col-md-4 col-form-label">18. সবজি স্টক আউট হয়ে গেলে কি করেন?  </label>
-            <div class="col-md-4">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q18" id="maleRadio" value="1">
-                    <label class="form-check-label" for="inlineRadio1">লোকাল কোন দোকান থেকে সংগ্রহ করি</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q18" id="femaleRadio" value="2">
-                    <label class="form-check-label" for="inlineRadio2">হোলসেলারের কাছ থেকে স্টক নেই</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q18" id="femaleRadio" value="3">
-                    <label class="form-check-label" for="inlineRadio2">দোকান বন্ধ করে দেই</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio2">অন্যান্য- </label>
-                    <input class="form-check-input" type="text" name="q18" id="femaleRadio">
-
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="gender" class="col-md-4 col-form-label">32. আপনি কি কখনো বড় মেয়াদে লোন নিয়েছেন? </label>
+                    <div class="col-md-8">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q32" id="maleRadio" value="1" required>
+                            <label class="form-check-label" for="inlineRadio1">হ্যাঁ, এখনো চলছে</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q32" id="femaleRadio" value="2">
+                            <label class="form-check-label" for="inlineRadio2">হ্যাঁ, নিয়েছিলাম, পরিশোধ করে
+                                দিয়েছি</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q32" id="femaleRadio" value="3">
+                            <label class="form-check-label" for="inlineRadio2">না</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- next button-->
-        <div>
-            <button type="submit" class="btn btn-success" name="next_btn">Next</button>
-            <!--<a href="q.php"><input type="submit" class="btn btn-success right-arrow" name="next" value="Next"></a>-->
-        </div>
+            <!-- next button-->
+            <div>
+                <button type="submit" class="btn btn-success" name="next_btn">Next</button>
+                <!--<a href="q.php"><input type="submit" class="btn btn-success right-arrow" name="next" value="Next"></a>-->
+            </div>
 
     </form>
 

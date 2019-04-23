@@ -1,5 +1,6 @@
 <?php
     session_start();
+
     if (isset($_POST['next_btn'])) {
         $q9 = $_POST['q9'];
         if ($q9 == "5") {
@@ -55,8 +56,9 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-12">
-                        <label for="gender" class="col-md-4 col-form-label">10. আপনার দোকানে যে যে আইটেম গুলো আছে সেগুলো সিলেক্ট করুন?  </label>
-                        <div class="col-md-8">
+                        <label for="gender" class="col-md-4 col-form-label">10. তার দোকানে যেসব আইটেম আছে, সেগুলো
+                            সিলেক্ট করুন </label>
+                        <div class="col-md-8" aria-required="true">
 
                             <div class=" form-check">
                                 <input class="form-check-input" type="checkbox" name="q10[]" id="maleRadio" value="পেঁয়াজ">

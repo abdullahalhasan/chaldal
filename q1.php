@@ -47,20 +47,68 @@ session_start();
         <div class="form-group row">
             <label for="center" class="col-md-4 col-form-label">1. এরিয়া / বাজারের নাম [ইন্টারভিউয়ার ফিলাপ করবেন]</label>
             <div class="col-sm-3">
-                <input type="text" class="form-control" name="q1" >
+                <select class="form-control" name="q1" required>
+                    <option value="">সিলেক্ট করুন</option>
+                    <option value="1">Adabor আদাবর</option>
+                    <option value="2">Airport এয়ারপোর্ট</option>
+                    <option value="3">Badda বাড্ডা</option>
+                    <option value="4">Bangshal বংশাল</option>
+                    <option value="5">Cantonment ক্যান্টনমেন্ট</option>
+                    <option value="6">Chalkbazar চকবাজার</option>
+                    <option value="7">Darussalam দারুস সালাম</option>
+                    <option value="8">Demra ডেমরা</option>
+                    <option value="9">Dhanmondi ধানমন্ডি</option>
+                    <option value="10">Dohar দোহার</option>
+                    <option value="11">Dokkhinkhan দক্ষিনখান</option>
+                    <option value="12">Gulshan গুলশান</option>
+                    <option value="13 ">Hazaribagh হাজারিবাগ</option>
+                    <option value="14">Jatrabari যাত্রাবাড়ী</option>
+                    <option value="15">Kadamtoli কদমতলি</option>
+                    <option value="16">Kafrul কাফরুল</option>
+                    <option value="17">Kala Bagan কলাবাগান</option>
+                    <option value="18">Kamrangirchar কামরাংগীর চর</option>
+                    <option value="19">Keraniganj কিরানিগঞ্জ</option>
+                    <option value="20">Khilgaon খিলগাও</option>
+                    <option value="21">Khilkhet খিলক্ষেত</option>
+                    <option value="22">Kotwali Dhaka কোতোয়ালী ঢাকা</option>
+                    <option value="23">Lalbagh লালবাগ</option>
+                    <option value="24">Mirpur মীরপুর</option>
+                    <option value="25">Mohammadpur মোহাম্মাদপুর</option>
+                    <option value="26">>Motijheel মতিঝিল</option>
+                    <option value="27">Mugda মুগদা</option>
+                    <option value="28">Nawabganj Dhk. নবাবগঞ্জ ঢাকা</option>
+                    <option value="29 ">New Market নিউমার্কেট</option>
+                    <option value="30">Pallabi পল্লবী</option>
+                    <option value="31">Ramna রমনা</option>
+                    <option value="32 ">Rampura রামপুরা</option>
+                    <option value="33">Rupnagar রুপনগর</option>
+                    <option value="34">Sabujbagh সবুজবাগ</option>
+                    <option value="35">Shah ali শাহ আলী</option>
+                    <option value="36">Shahbagh শাহবাগ</option>
+                    <option value="37">Sher E Bangla Nagar শের-ই-বাংলানগর</option>
+                    <option value="38">Shyampur শ্যামপুর</option>
+                    <option value="39">Sutrapur সুত্রাপুর</option>
+                    <option value="40">Turag তুরাগ</option>
+                    <option value="41">Uttara উত্তরা</option>
+                    <option value="42">Uttarkhan উত্তরখান</option>
+                    <option value="43">Vasantake ভাসানটেক</option>
+                    <option value="44">Vatara ভাটারা</option>
+                    <option value="45 ">Wari ওয়ারি</option>
+
+                </select>
             </div>
         </div>
         <div class="form-group row">
             <label for="center" class="col-md-4 col-form-label">2. ব্যবসায়ীর নাম</label>
             <div class="col-sm-3">
-                <input type="text" class="form-control" name="q2" >
+                <input type="text" class="form-control" name="q2" required>
             </div>
         </div>
         <div class="form-group row">
             <label for="gender" class="col-md-4 col-form-label">3. লিঙ্গ </label>
             <div class="col-sm-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q3" id="maleRadio" value="1">
+                    <input class="form-check-input" type="radio" name="q3" id="maleRadio" value="1" required>
                     <label class="form-check-label" for="inlineRadio1">পুরুষ</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -72,14 +120,15 @@ session_start();
         <div class="form-group row">
             <label for="center" class="col-md-4 col-form-label">4. মোবাইল নাম্বার </label>
             <div class="col-sm-3">
-                <input type="text" maxlength="11" class="form-control" name="q3" >
+                <input type="number" class="form-control" name="q3" maxlength="11" min="1100000000" max="1999999999"
+                       required>
             </div>
         </div>
         <div class="form-group row">
             <label for="gender" class="col-md-4 col-form-label">5. কানেকশন টাইপ  </label>
             <div class="col-sm-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q5" id="maleRadio" value="1">
+                    <input class="form-check-input" type="radio" name="q5" id="maleRadio" value="1" required>
                     <label class="form-check-label" for="inlineRadio1">প্রিপেইড</label>
                 </div>
                 <div class="form-check form-check-inline">

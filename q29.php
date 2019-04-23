@@ -1,11 +1,11 @@
 <?php
-    session_start();
-    if (isset($_POST['next_btn'])) {
-        $q28 = $_POST['q28'];
-        if ($q28 == "2") {
-            header('Location: q30.php');
-        }
-    }
+session_start();
+/**
+ * Created by PhpStorm.
+ * User: BDDL-102
+ * Date: 4/16/2019
+ * Time: 10:09 PM
+ */
 ?>
 
 
@@ -43,41 +43,52 @@
 <!--Heading-->
 <div class="container">
 
-    <form action="q30.php" method="post">
+    <form action="q31.php" method="post">
 
-        <div class="form-group row">
-            <label for="gender" class="col-md-4 col-form-label">29. কিভাবে সেভিংস করেন?  </label>
-            <div class="col-md-4">
-                <div class="row">
-                <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="q29" id="maleRadio" value="1">
-                    <label class="form-check-label" for="inlineRadio1">ক্যাশ টাকা জমাই</label>
-                </div>
-                <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="2">
-                    <label class="form-check-label" for="inlineRadio2">কো-অপারেটিভ সোসাইটিতে জমাই</label>
-                </div>
-                <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="3">
-                    <label class="form-check-label" for="inlineRadio2">ব্যাংকে জমাই</label>
-                </div>
-                <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="4">
-                    <label class="form-check-label" for="inlineRadio2">অন্যদের লোন দেই</label>
-                </div>
-                <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="5">
-                    <label class="form-check-label" for="inlineRadio2">অন্য ব্যবসায় খাটাই</label>
-                </div>
-                <div class="form-check form-check-inline col-md-12">
-                    <label class="form-check-label" for="inlineRadio2">অন্যান্য- </label>
-                    <input class="form-check-input" type="text" name="q29" id="femaleRadio">
-
-                </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="gender" class="col-md-4 col-form-label">29.আপনার কি </label>
+                    <div class="col-md-8">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q29" id="maleRadio" value="1" required>
+                            <label class="form-check-label" for="inlineRadio1">ব্যাংক এ্যাকাউন্ট আছে?</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="2">
+                            <label class="form-check-label" for="inlineRadio2">মোবাইল ওয়ালেট (বিকাশ, রকেট,
+                                ইত্যাদি)আছে?</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="3">
+                            <label class="form-check-label" for="inlineRadio2">কো-অপারেটিভ সোসাইটিতে সদস্য পদ
+                                আছে?</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q29" id="femaleRadio" value="4">
+                            <label class="form-check-label" for="inlineRadio2">কোনটি-ই নেই</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="gender" class="col-md-4 col-form-label">30.আপনার কি কিছু সঞ্চয় আছে?</label>
+                    <div class="col-md-8">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q30" id="maleRadio" value="1" required>
+                            <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q30" id="femaleRadio" value="2">
+                            <label class="form-check-label" for="inlineRadio2">না</label>
+                        </div>
+                </div>
+            </div>
+        </div>
         <!-- next button-->
         <div>
             <button type="submit" class="btn btn-success" name="next_btn">Next</button>

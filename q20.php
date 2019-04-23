@@ -43,17 +43,29 @@ session_start();
 <!--Heading-->
 <div class="container">
 
-    <form action="q38.php" method="post">
+    <form action="q21.php" method="post">
+
         <div class="form-group row">
-            <label for="gender" class="col-md-4 col-form-label">37. আপনার কি এখন কোন লোনের দরকার আছে  </label>
-            <div class="col-sm-3">
+            <label for="gender" class="col-md-4 col-form-label">20. যখন মজুত শেষ হয়ে যায় - তখন সচারাচর আপনি কি
+                করেন? </label>
+            <div class="col-md-4">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q37" id="maleRadio" value="1">
-                    <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
+                    <input class="form-check-input" type="radio" name="q20" id="maleRadio" value="1">
+                    <label class="form-check-label" for="inlineRadio1">আশে পাশের দোকান থেকে নিয়ে আসি</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q37" id="femaleRadio" value="2">
-                    <label class="form-check-label" for="inlineRadio2">না</label>
+                    <input class="form-check-input" type="radio" name="q20" id="femaleRadio" value="2">
+                    <label class="form-check-label" for="inlineRadio2">পাইকার এর কাছ থেকে নিয়ে আসি</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q20" id="femaleRadio" value="3">
+                    <label class="form-check-label" for="inlineRadio2">সেই দিনের মত ওই আইটেম (সবজী) আর বিক্রি করি
+                        না</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio2">অন্য কিছু- </label>
+                    <input class="form-check-input" type="text" name="q20" id="femaleRadio">
+
                 </div>
             </div>
         </div>

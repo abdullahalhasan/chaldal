@@ -9,6 +9,9 @@ foreach ($q10_option as $selected) {
     $vegetable_list_array[] = $q10_option;
     //echo "<br>".$q10_option;
 }
+foreach ($_SESSION['veg_value'] as $values) {
+    //echo "<br>".$values;
+}
 //die;
 ?>
 
@@ -51,7 +54,8 @@ foreach ($q10_option as $selected) {
     <form action="q13.php" method="post">
         <div class="form-group row">
 
-            <label for="center" class="col-md-4 col-form-label">12. কতদিন পর পর কেনেন?</label>
+            <label for="center" class="col-md-4 col-form-label">12."সবজির নাম উল্লেখ করুন" আপনি কতদিন পর পর
+                কেনেন?</label>
             <br>
         </div>
         <?php
@@ -63,23 +67,28 @@ foreach ($q10_option as $selected) {
                 <label for="gender" class="col-md-3 col-form-label"> <?php echo $vegetable_list_array[$i]; ?>  </label>
                 <div class="col-sm-9">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q12" id="maleRadio" value="1">
+                        <input class="form-check-input" type="radio" name="q12<?php echo $vegetable_list_array[$i]; ?>"
+                               id="maleRadio" value="1" required>
                         <label class="form-check-label" for="inlineRadio1">প্রতিদিন</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q12" id="femaleRadio" value="2">
+                        <input class="form-check-input" type="radio" name="q12<?php echo $vegetable_list_array[$i]; ?>"
+                               id="femaleRadio" value="2">
                         <label class="form-check-label" for="inlineRadio2">সপ্তাহে ২-৩ বার</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q12" id="maleRadio" value="3">
+                        <input class="form-check-input" type="radio" name="q12<?php echo $vegetable_list_array[$i]; ?>"
+                               id="maleRadio" value="3">
                         <label class="form-check-label" for="inlineRadio1">সপ্তাহে ১ বার</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q12" id="femaleRadio" value="4">
+                        <input class="form-check-input" type="radio" name="q12<?php echo $vegetable_list_array[$i]; ?>"
+                               id="femaleRadio" value="4">
                         <label class="form-check-label" for="inlineRadio2">২ সপ্তাহে ১ বার</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q12" id="femaleRadio" value="5">
+                        <input class="form-check-input" type="radio" name="q12<?php echo $vegetable_list_array[$i]; ?>"
+                               id="femaleRadio" value="5">
                         <label class="form-check-label" for="inlineRadio2">মাসে একবার</label>
                     </div>
                 </div>

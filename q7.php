@@ -47,11 +47,12 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-md-12">
-                    <label for="gender" class="col-md-6 col-form-label">7. আপনি কতদিন ধরে সবজির ব্যবসার সাথে সংযুক্ত?   </label>
+                    <label for="gender" class="col-md-6 col-form-label">7. আপনি কত দিন ধরে এই সবজী ব্যবসায় এর সাথে
+                        জড়িত? </label>
                     <div class="col-md-6">
 
                         <div class=" form-check">
-                            <input class="form-check-input" type="radio" name="q7" id="maleRadio" value="1">
+                            <input class="form-check-input" type="radio" name="q7" id="maleRadio" value="1" required>
                             <label class="form-check-label" for="inlineRadio1">১ বছরের কম</label>
                         </div>
                         <div class="form-check">

@@ -43,32 +43,62 @@ session_start();
 <!--Heading-->
 <div class="container">
 
-    <form action="q18.php" method="post">
-
+    <form action="q20.php" method="post">
         <div class="form-group">
             <div class="row">
                 <div class="col-md-12">
-                    <label for="gender" class="col-md-4 col-form-label">17. সবজি কতবার স্টক আউট হয়েছে?  </label>
+                    <label for="gender" class="col-md-4 col-form-label">17. আপনার দোকানে কোন কর্মচারী আছে? </label>
                     <div class="col-md-8">
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q17" id="maleRadio" value="1">
+                            <input class="form-check-input" type="radio" name="q17" id="yesRadio" value="1" required
+                                   onclick="empChk()">
+                            <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q17" id="noRadio" value="2"
+                                   onclick="empChk()">
+                            <label class="form-check-label" for="inlineRadio2">না</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="employee" style="display: none">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="center" class="col-md-4 col-form-label">18. কত জন কর্মচারী?</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="q18">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="gender" class="col-md-4 col-form-label">19. কত ঘন ঘন আপনার দোকান চলা অবস্থায় সবজীর মজুত
+                        ফুরিয়ে যায়?? </label>
+                    <div class="col-md-8">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="q19" id="maleRadio" value="1" required>
                             <label class="form-check-label" for="inlineRadio1">প্রতিদিন</label>
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q17" id="femaleRadio" value="2">
-                            <label class="form-check-label" for="inlineRadio2">প্রায়ই (২ – ৩ দিন পর পর)</label>
+                            <input class="form-check-input" type="radio" name="q19" id="femaleRadio" value="2">
+                            <label class="form-check-label" for="inlineRadio2">প্রায়শই (প্রতি ২-৩ দিনে একবার)</label>
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q17" id="femaleRadio" value="3">
-                            <label class="form-check-label" for="inlineRadio2">সপ্তাহ শেষে</label>
+                            <input class="form-check-input" type="radio" name="q19" id="femaleRadio" value="3">
+                            <label class="form-check-label" for="inlineRadio2">শুক্র/শনিবার হলে / ছুটির দিন
+                                গুলোতে</label>
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q17" id="femaleRadio" value="4">
-                            <label class="form-check-label" for="inlineRadio2">মাঝে মাঝে</label>
+                            <input class="form-check-input" type="radio" name="q19" id="femaleRadio" value="4">
+                            <label class="form-check-label" for="inlineRadio2">সচরাচর হয় না</label>
                         </div>
                         <div class="form-check ">
-                            <input class="form-check-input" type="radio" name="q17" id="femaleRadio" value="5">
-                            <label class="form-check-label" for="inlineRadio2">কখনই না</label>
+                            <input class="form-check-input" type="radio" name="q19" id="femaleRadio" value="5">
+                            <label class="form-check-label" for="inlineRadio2">কখনই হয় না</label>
                         </div>
                     </div>
                 </div>
@@ -90,3 +120,17 @@ session_start();
 </body>
 </html>
 
+<script language="JavaScript">
+    function empChk() {
+        //married_check
+        var mar = document.getElementById("yesRadio");
+        var unMar = document.getElementById("noRadio");
+        var married_div = document.getElementById("employee");
+        if (unMar.checked) {
+            married_div.style.display = "none";
+        }
+        if (mar.checked) {
+            married_div.style.display = "block";
+        }
+    }
+</script>

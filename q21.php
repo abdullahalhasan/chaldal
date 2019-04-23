@@ -43,43 +43,56 @@ session_start();
 <!--Heading-->
 <div class="container">
 
-    <form action="q17.php" method="post">
+    <form action="q27.php" method="post">
         <div class="form-group row">
 
-            <label for="center" class="col-md-4 col-form-label">13. আপনি কয়টার দিকে দোকান খোলেন?</label>
+            <label for="center" class="col-md-4 col-form-label">21. আপনি সপ্তাহে কত টাকার সবজী কেনেন?</label>
             <div class="col-sm-3">
-                <input type="time" class="form-control" name="q13" required>
+                <input type="number" class="form-control" name="q21" required>
             </div>
         </div>
         <div class="form-group row">
 
-            <label for="center" class="col-md-4 col-form-label">14. আপনি কয়টার দিকে দোকান বন্ধ করেন?</label>
+            <label for="center" class="col-md-4 col-form-label">22. সব খরচ বাদ দিয়ে মোটামুটি সপ্তাহে কত টাকার লাভ
+                থাকে?</label>
             <div class="col-sm-3">
-                <input type="time" class="form-control" name="q14" required>
+                <input type="number" class="form-control" name="q22" required>
             </div>
         </div>
         <div class="form-group row">
 
-            <label for="center" class="col-md-4 col-form-label">15. আপনি দোকানের জন্য সবজী কেনাকাটা করেন কখন?</label>
+            <label for="center" class="col-md-4 col-form-label">23. আপনার এই দোকানের/ জায়গার মাসে ভাড়া কত?</label>
             <div class="col-sm-3">
-                <input type="time" class="form-control" name="q15" required>
+                <input type="number" class="form-control" name="q23" required>
             </div>
         </div>
         <div class="form-group row">
-            <label for="gender" class="col-md-4 col-form-label">16. সবজী গুলো কিভাবে দোকান পর্যন্ত আনেন? </label>
+
+            <label for="center" class="col-md-4 col-form-label">24. সবজী পরিবহন এবং ক্যারিং বাবদ সপ্তাহে কত খরচ
+                হয়?</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="q24" required>
+            </div>
+        </div>
+        <div class="form-group row">
+
+            <label for="center" class="col-md-4 col-form-label">25. প্রতি সপ্তাহে আনুমানিক কত টাকার সবজী নষ্ট
+                হয়?</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="q25" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="gender" class="col-md-4 col-form-label">26. আপনি কি পাইকার / সাপ্লাইয়ার এর কাছ থেকে বাকি তে মাল
+                কেনার সুবিধা পান? </label>
             <div class="col-sm-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q16" id="maleRadio" value="1">
-                    <label class="form-check-label" for="inlineRadio1">নিজেস্ব ব্যবস্থায়</label>
+                    <input class="form-check-input" type="radio" name="q26" id="maleRadio" value="1" required>
+                    <label class="form-check-label" for="inlineRadio1">হ্যাঁ</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q16" id="femaleRadio" value="2">
-                    <label class="form-check-label" for="inlineRadio2">পাইকার/ চাষী নিজে নিয়ে আসে</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio2">অন্য কোন উপায়- </label>
-                    <input class="form-check-input" type="text" name="q16">
-
+                    <input class="form-check-input" type="radio" name="q26" id="femaleRadio" value="2">
+                    <label class="form-check-label" for="inlineRadio2">না</label>
                 </div>
             </div>
         </div>

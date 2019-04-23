@@ -46,9 +46,9 @@ session_start();
     <form action="q9.php" method="post">
         <div class="form-group row">
 
-                <label for="center" class="col-md-4 col-form-label">8. প্রতিদিন কত টাকা ইনকাম হয়?</label>
+            <label for="center" class="col-md-4 col-form-label">8. আপনার দিনে কত টাকার কেনা বেচা হয়?</label>
                 <div class="col-sm-3">
-                    <input type="number" class="form-control" name="q8" >
+                    <input type="number" class="form-control" name="q8" required>
                 </div>
         </div>
 
